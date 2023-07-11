@@ -1,25 +1,19 @@
 {% include 'navbar.html' %}
 
-{% block content %}
-<style>
-body {
-	color: white;
-}
-img {
-	float: none;
-}
-</style>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-<div class="w3-container">
-	<div class="panel panel-default" style="text-align: left; width: 97%; margin-left: 20px; background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/39/Cloud_banner.jpg')">
-		<h1>Chase Julius Dixon</h1>
-		<h2>Problem Solver</h2>
-		<p style="font-size: 20px">Bio: I am currently a Junior at the University of Notre Dame. I'm majoring in Computer Science with a minor in Engineering Corporate Practice.
-        <br>I am also a member of the Notre Dame football team. I'm very interested in the interestion between business and technology as well as innovation. I want to use technology as a means to impact others.
-        <br>"A man who stands for nothing will fall for anything"- Malcolm X</p>
-	</div>
-		<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/college-football/players/full/5081699.png&w=350&h=254" alt="Me">
-</div>
+    <div class="chase">
+        <div class="detel">
+		    <h1>Chase Julius Dixon</h1>
+		    <p>I am currently a Junior at the University of Notre Dame. I'm majoring in             Computer Science with a minor in Engineering Corporate Practice.
+            <br>I am also a member of the Notre Dame football team. I'm very interested             in the interestion between business and technology as well as innovation.              I want to use technology as a means to impact others.</p>
+            <a href="#">DOWNLOAD RESUME</a>
+	    </div>
+        <div class="images">
+            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/college-footbal             l/players/full/5081699.png&w=350&h=254" alt="Me">
+        </div>
+    </div>
 </body>
-{% endblock %}
