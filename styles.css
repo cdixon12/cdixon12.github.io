@@ -52,12 +52,11 @@ span{
 }
 
 .detel p{
-    color: #555;
+    color: #5A5A5A;
     line-height: 22px;
 }
 
 .detel{
-    background: #212121;
     padding: 10px 18px;
     text-decoration: none;
     font-weight: bold;
