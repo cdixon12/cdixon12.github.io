@@ -14,7 +14,7 @@
 nav{
     display: flex;
     width: 84%;
-    margin-right: 20px;
+    right: 20px;
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
@@ -66,9 +66,16 @@ span{
     border-radius: 5px;
 }
 
-.images{
-    width: 70%;
-    height: 100%;
+.image1{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.image2{
+    width: 400px;
+    height: 500px;
     position: absolute;
     bottom: 0;
     right: 100px;
