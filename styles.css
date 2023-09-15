@@ -71,12 +71,12 @@ span{
     width: 500px;
     height: 600px;
     position: absolute;
-    bottom: -200;
-    right: 200px;
+    bottom: -50;
+    right: 50px;
 }
 .image2{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: absolute;
     bottom: 0;
     right: 100px;
