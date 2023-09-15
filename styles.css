@@ -68,11 +68,11 @@ span{
 }
 
 .image1{
-    width: 600px;
-    height: 700px;
+    width: 500px;
+    height: 600px;
     position: absolute;
-    bottom: 0;
-    right: 100px;
+    bottom: -200;
+    right: 200px;
 }
 .image2{
     width: 400px;
