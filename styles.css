@@ -48,7 +48,7 @@ nav ul li a:hover{
 }
 
 span{
-    color: purple;
+    color: #00BFFF;
 }
 
 .detel p{
@@ -72,11 +72,11 @@ span{
     height: 600px;
     position: absolute;
     bottom: 0;
-    right: 50px;
+    right: 100px;
 }
 .image2{
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     position: absolute;
     bottom: 0;
     right: 100px;
