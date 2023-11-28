@@ -80,7 +80,7 @@ span{
     height: 500px;
     position: absolute;
     bottom: 0;
-    right: 100px;
+    right: 0px;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
 }
