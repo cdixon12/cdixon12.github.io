@@ -54,6 +54,7 @@ span{
 .detel p{
     color: #5A5A5A;
     line-height: 22px;
+    font-size: 20px;
 }
 
 .detel a{
@@ -80,6 +81,15 @@ span{
     position: absolute;
     bottom: 0;
     right: 100px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
 }
 
+.images:hover .image1{
+    bottom: 40px;
+}
+
+.images:hover .image2{
+    left: 45%;
+}
 
