@@ -37,15 +37,24 @@
             margin-bottom: 10px;
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- include the navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="https://cdixon12.github.io/">HOME</a></li>
+            <li><a href="https://cdixon12.github.io/about.html">ABOUT</a></li>
+            <li><a href="https://cdixon12.github.io/projects.html">PROJECTS</a></li>
+            <li><a href="https://cdixon12.github.io/movies.html">MOVIES</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>My Projects</h1>
     </header>
 
     <section class="project">
-        <h2>Project Name 1</h2>
+        <h2>Crypto Market Analysis Site </h2>
         <img src="images/Crypto.png" alt="Project 1 Image">
         <p>
             For this project, I used a public API by CoinCap which is a real-time pricing and market activity crypto site in order to gather data on 100 coins and 73 exchanges. I leveraged object-oriented programming to create classes for the coins and exchanges in Python. I implemented SQLAlchemy and SQLite to set up my database with the coins and exchanges tables. I then developed several pages with HTML and CSS. The coins page displays a table with the name, price, market cap, and rank of each coin with the name acting as a link to that coin's site. The exchanges page has a table with each exchange's number of trading pairs, percent of total volume, rank, and name that links to that exchange's site. The trends page allows users to view tables with the top n (user inputted amount) winners and top n losers based on 24-hour % change. This and several other interactive features were implemented with Flask-Bootstrap. 
@@ -58,7 +67,7 @@
     </section>
 
     <section class="project">
-        <h2>Project Name 2</h2>
+        <h2>Reddit Scraper Website </h2>
         <img src="images/Reddit.png" alt="Project 2 Image">
         <p>
             For this project, I used an HTTP request to Reddit's API to create a Reddit Web-Scraper Site. Using Python, I create classes for Subreddits, Posts, and Comments pulled from the site. I then set up a database with tables for each using SQLAlchemy and SQLite. This web application allows users to select a subreddit and view each of its posts. They can then select a post to see each of its comments and the number of upvotes for each. At every level, you can filter the content by text. There are also log in and user setting capabilities for users to update each item's amount displayed, order, attribute, or filter. I developed the front end using HTML, CSS, and Flask-Bootrap.
