@@ -69,30 +69,28 @@ span{
 }
 
 .images {
-    transform: translateX(-50%);
-    transition:  bottom 1s, left 1s;
-}
-
-.image1{
-    width: 500px;
-    height: 600px;
+    width: 45%;
+    height: 80%;
     position: absolute;
     bottom: 0;
     right: 100px;
 }
-.image2{
-    width: 500px;
-    height: 500px;
+
+.images img{
+    height: 100%;
     position: absolute;
+    left: 50%;
     bottom: 0;
-    right: -100px;
+    transform: translateX(-50%);
+    transition: bottom 1s, margin-left 1s; 
 }
+
 
 .images:hover .image1{
     bottom: 40px;
 }
 
 .images:hover .image2{
-    left: 80%;
+    left: 45%;
 }
 
