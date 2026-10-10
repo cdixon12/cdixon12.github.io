@@ -1,164 +1,166 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Books</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        .book {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-
-        .book img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .book-details {
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+    <meta name="description" content="Chase Dixon's top 10 favorite books, from literature and memoirs to business and personal growth.">
+    <title>Books | Chase Dixon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- include the navigation bar -->
     <nav>
+        <a href="index.html" class="logo">CD.</a>
         <ul>
-            <li><a href="https://cdixon12.github.io/">HOME</a></li>
-            <li><a href="https://cdixon12.github.io/about.html">ABOUT</a></li>
-            <li><a href="https://cdixon12.github.io/projects.html">PROJECTS</a></li>
-            <li><a href="https://cdixon12.github.io/movies.html">MOVIES</a></li>
-            <li><a href="https://cdixon12.github.io/books.html">BOOKS</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>My Top 10 Favorite Books</h1>
-    </header>
 
-    <main>
-        <div class="book">
-            <img src="images/ColorOfWater.jpg" alt="Book 1">
-            <div class="book-details">
-                <h2>The Color of Water</h2>
-                <p>By James McBride</p>
-            </div>
-        </div>
+    <main class="books-page">
+        <header class="page-header">
+            <p class="eyebrow">THE READING LIST</p>
+            <h1>Stories and ideas<br>
+                <span>worth revisiting.</span>
+            </h1>
+            <p class="page-intro">
+                Ten of my favorite books spanning literature, biography,
+                business, and personal growth. Some challenge how I see the
+                world; others remind me what matters.
+            </p>
+        </header>
 
-        <div class="book">
-            <img src="images/TGR.jpg" alt="Book 2">
-            <div class="book-details">
-                <h2>Think and Grow Rich</h2>
-                <p>By Napolean Hill</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/Alchemist.jpg" alt="Book 3">
-            <div class="book-details">
-                <h2>The Alchemist</h2>
-                <p>By Paulo Coelho</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/HowToWinFriends.jpg" alt="Book 4">
-            <div class="book-details">
-                <h2>How to Win Friends & Influence People</h2>
-                <p>By Dale Carnegie</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/InvisibleMan.jpg" alt="Book 5">
-            <div class="book-details">
-                <h2>Invisible Man</h2>
-                <p>By Ralph Ellison</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/Hobbit.jpg" alt="Book 6">
-            <div class="book-details">
-                <h2>The Hobbit</h2>
-                <p>By J.R.R. Tolkien</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/Malcolm.jpg" alt="Book 7">
-            <div class="book-details">
-                <h2>The Autobiograhpy of Malcolm X</h2>
-                <p>By Malcolm X</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/Atomic.jpg" alt="Book 8">
-            <div class="book-details">
-                <h2>Atomic Habits</h2>
-                <p>By James Clear</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/Psychology.jpg" alt="Book 9">
-            <div class="book-details">
-                <h2>The Pyschology of Money</h2>
-                <p>By Morgan Housel</p>
-            </div>
-        </div>
-        
-        <div class="book">
-            <img src="images/Essentialism.jpg" alt="Book 10">
-            <div class="book-details">
-                <h2>Essentialism</h2>
-                <p>By Greg McKeown</p>
-            </div>
-        </div>
-        <!-- Add more book  entries as needed -->
+        <section class="books-grid" aria-label="My top 10 favorite books">
 
+            <article class="book-card">
+                <span class="book-rank">01</span>
+                <div class="book-cover">
+                    <img src="images/ColorOfWater.jpg"
+                         alt="The Color of Water book cover">
+                </div>
+                <div class="book-info">
+                    <h2>The Color of Water</h2>
+                    <p class="book-author">James McBride</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">02</span>
+                <div class="book-cover">
+                    <img src="images/TGR.jpg"
+                         alt="Think and Grow Rich book cover">
+                </div>
+                <div class="book-info">
+                    <h2>Think and Grow Rich</h2>
+                    <p class="book-author">Napoleon Hill</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">03</span>
+                <div class="book-cover">
+                    <img src="images/Alchemist.jpg"
+                         alt="The Alchemist book cover">
+                </div>
+                <div class="book-info">
+                    <h2>The Alchemist</h2>
+                    <p class="book-author">Paulo Coelho</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">04</span>
+                <div class="book-cover">
+                    <img src="images/HowToWinFriends.jpg"
+                         alt="How to Win Friends and Influence People book cover">
+                </div>
+                <div class="book-info">
+                    <h2>How to Win Friends &amp; Influence People</h2>
+                    <p class="book-author">Dale Carnegie</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">05</span>
+                <div class="book-cover">
+                    <img src="images/InvisibleMan.jpg"
+                         alt="Invisible Man book cover">
+                </div>
+                <div class="book-info">
+                    <h2>Invisible Man</h2>
+                    <p class="book-author">Ralph Ellison</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">06</span>
+                <div class="book-cover">
+                    <img src="images/Hobbit.jpg"
+                         alt="The Hobbit book cover">
+                </div>
+                <div class="book-info">
+                    <h2>The Hobbit</h2>
+                    <p class="book-author">J.R.R. Tolkien</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">07</span>
+                <div class="book-cover">
+                    <img src="images/Malcolm.jpg"
+                         alt="The Autobiography of Malcolm X book cover">
+                </div>
+                <div class="book-info">
+                    <h2>The Autobiography of Malcolm X</h2>
+                    <p class="book-author">Malcolm X with Alex Haley</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">08</span>
+                <div class="book-cover">
+                    <img src="images/Atomic.jpg"
+                         alt="Atomic Habits book cover">
+                </div>
+                <div class="book-info">
+                    <h2>Atomic Habits</h2>
+                    <p class="book-author">James Clear</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">09</span>
+                <div class="book-cover">
+                    <img src="images/Psychology.jpg"
+                         alt="The Psychology of Money book cover">
+                </div>
+                <div class="book-info">
+                    <h2>The Psychology of Money</h2>
+                    <p class="book-author">Morgan Housel</p>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <span class="book-rank">10</span>
+                <div class="book-cover">
+                    <img src="images/Essentialism.jpg"
+                         alt="Essentialism book cover">
+                </div>
+                <div class="book-info">
+                    <h2>Essentialism</h2>
+                    <p class="book-author">Greg McKeown</p>
+                </div>
+            </article>
+
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 My Favorite Books</p>
+        <p>&copy; 2026 Chase Dixon. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

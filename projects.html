@@ -1,90 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        h2 {
-            color: #444;
-        }
-
-        p {
-            color: #666;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .project img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <meta name="description" content="Explore Chase Dixon's software development projects, including cryptocurrency market analysis and a Reddit scraper web application.">
+    <title>Projects | Chase Dixon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- include the navigation bar -->
     <nav>
+        <a href="index.html" class="logo">CD.</a>
         <ul>
-            <li><a href="https://cdixon12.github.io/">HOME</a></li>
-            <li><a href="https://cdixon12.github.io/about.html">ABOUT</a></li>
-            <li><a href="https://cdixon12.github.io/projects.html">PROJECTS</a></li>
-            <li><a href="https://cdixon12.github.io/movies.html">MOVIES</a></li>
-            <li><a href="https://cdixon12.github.io/books.html">BOOKS</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>My Projects</h1>
-    </header>
 
-    <section class="project">
-        <h2>Crypto Market Analysis Site </h2>
-        <img src="images/Crypto.png" alt="Project 1 Image">
-        <p>
-            For this project, I used a public API by CoinCap which is a real-time pricing and market activity crypto site in order to gather data on 100 coins and 73 exchanges. I leveraged object-oriented programming to create classes for the coins and exchanges in Python. I implemented SQLAlchemy and SQLite to set up my database with the coins and exchanges tables. I then developed several pages with HTML and CSS. The coins page displays a table with the name, price, market cap, and rank of each coin with the name acting as a link to that coin's site. The exchanges page has a table with each exchange's number of trading pairs, percent of total volume, rank, and name that links to that exchange's site. The trends page allows users to view tables with the top n (user inputted amount) winners and top n losers based on 24-hour % change. This and several other interactive features were implemented with Flask-Bootstrap. 
-        </p>
-        <p>
-            <strong>GitHub Repository:</strong> <a href="https://github.com/cdixon12/Crypto" target="_blank">Project 1 on GitHub</a>
-            <!--<strong>Coin Site:</strong> <a href="https://cdixon12.github.io/landing.html" target="_blank">Project 1 Site</a> -->
+    <main class="projects-page">
+        <header class="page-header">
+            <p class="eyebrow">SELECTED WORK</p>
+            <h1>Building ideas<br>
+                <span>into reality.</span>
+            </h1>
+            <p class="page-intro">
+                A selection of projects exploring software development,
+                data, APIs, and interactive web applications.
+            </p>
+        </header>
 
-        </p>
-    </section>
+        <section class="projects-grid">
 
-    <section class="project">
-        <h2>Reddit Scraper Website </h2>
-        <img src="images/Reddit.png" alt="Project 2 Image">
-        <p>
-            For this project, I used an HTTP request to Reddit's API to create a Reddit Web-Scraper Site. Using Python, I create classes for Subreddits, Posts, and Comments pulled from the site. I then set up a database with tables for each using SQLAlchemy and SQLite. This web application allows users to select a subreddit and view each of its posts. They can then select a post to see each of its comments and the number of upvotes for each. At every level, you can filter the content by text. There are also log in and user setting capabilities for users to update each item's amount displayed, order, attribute, or filter. I developed the front end using HTML, CSS, and Flask-Bootrap.
-        </p>
-        <p>
-            <strong>GitHub Repository:</strong> <a href="https://github.com/cdixon12/Reddit" target="_blank">Project 2 on GitHub</a>
-        </p>
-    </section>
+            <article class="project-card">
+                <img
+                    src="images/Crypto.png"
+                    alt="Cryptocurrency market analysis website"
+                    class="project-image"
+                >
 
-    <!-- Add more project sections as needed -->
+                <div class="project-content">
+                    <p class="card-eyebrow">DATA · FINTECH · WEB DEVELOPMENT</p>
+                    <h2>Crypto Market Analysis</h2>
+
+                    <p>
+                        A cryptocurrency analytics website that uses the
+                        CoinCap API to retrieve market data across 100 coins
+                        and 73 exchanges. Users can explore prices, market
+                        capitalization, exchange activity, and top gainers
+                        and losers over a 24-hour period.
+                    </p>
+
+                    <p>
+                        Built an object-oriented Python application with a
+                        SQLite database, using SQLAlchemy to manage coin and
+                        exchange data. Developed interactive pages and
+                        tables with Flask, HTML, and CSS.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLAlchemy</span>
+                        <span>SQLite</span>
+                        <span>REST API</span>
+                    </div>
+
+                    <a
+                        class="project-link"
+                        href="https://github.com/cdixon12/Crypto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img
+                    src="images/Reddit.png"
+                    alt="Reddit scraper web application"
+                    class="project-image"
+                >
+
+                <div class="project-content">
+                    <p class="card-eyebrow">DATA · AUTOMATION · WEB DEVELOPMENT</p>
+                    <h2>Reddit Scraper</h2>
+
+                    <p>
+                        A web application that retrieves subreddit posts
+                        and comments, allowing users to explore discussion
+                        threads, compare upvotes, and filter content by text.
+                    </p>
+
+                    <p>
+                        Designed Python classes for subreddits, posts, and
+                        comments, with SQLAlchemy and SQLite for data
+                        persistence. Added user login and customizable
+                        settings for sorting, filtering, and controlling
+                        the amount of displayed content.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLAlchemy</span>
+                        <span>SQLite</span>
+                        <span>REST API</span>
+                    </div>
+
+                    <a
+                        class="project-link"
+                        href="https://github.com/cdixon12/Reddit"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="projects-contact">
+            <h2>More about my work</h2>
+            <p>
+                Interested in my background or what I'm exploring next?
+            </p>
+            <a href="about.html" class="project-link">Learn more about me →</a>
+        </section>
+    </main>
 
     <footer>
-        <p>
-            &copy; 2023 My Projects. All rights reserved.
-        </p>
+        <p>&copy; 2026 Chase Dixon. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

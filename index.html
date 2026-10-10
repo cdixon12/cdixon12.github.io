@@ -1,37 +1,103 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chase Dixon — Notre Dame graduate and technology-minded business professional.">
+    <title>Chase Dixon | Business & Technology</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="hero">
-    <!-- include the navigation bar -->
-        <nav>
-             <ul>
-                 <li><a href="https://cdixon12.github.io/">HOME</a></li>
-                 <li><a href="https://cdixon12.github.io/about.html">ABOUT</a></li>
-                 <li><a href="https://cdixon12.github.io/projects.html">PROJECTS</a></li>
-                 <li><a href="https://cdixon12.github.io/movies.html">MOVIES</a></li>
-                 <li><a href="https://cdixon12.github.io/books.html">BOOKS</a></li>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html">CD.</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="movies.html">Movies</a></li>
             </ul>
         </nav>
-        <div class="detel">
-		    <h1>Chase <span>Dixon</span></h1>
-		    <p>I graduated Magna Cum Laude from 
-            <br>the University of Notre Dame class of 2024
-            <br>with a Bachelor of Science in Computer Science
-            <br>and a minor in Engineering Corporate Practice.
-            <br>I am also a former member of the Notre Dame football team.
-            <br>I'm very interested in the intersection 
-            <br>between business and technology.
-            <br>I want to use technology as a means to impact others.</p>
-            <a href="Dixon_Resume.pdf" download="Dixon_Resume.pdf">DOWNLOAD RESUME</a>
-	    </div>
-        <div class="images">
-            <img src="images/background_shape.png" alt="shape" class="image1">
-            <img src="images/FootballHead.png" alt="headshot" class="image2">
-        </div>
-    </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">CONSULTING · TECHNOLOGY · IMPACT</p>
+
+                <h1>Chase Dixon<span>.</span></h1>
+
+                <h2>Bridging business and technology to solve meaningful problems.</h2>
+
+                <p class="intro">
+                    I'm a Notre Dame graduate and Deloitte consultant with a
+                    background in computer science and financial services.
+                    I'm interested in how technology, business, and
+                    innovative thinking can create opportunities and make
+                    a lasting impact.
+                </p>
+
+                <p class="credentials">
+                    B.S. Computer Science · Magna Cum Laude · Notre Dame '24
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary"
+                       href="Dixon_Resume.pdf"
+                       target="_blank"
+                       rel="noopener">
+                        View Resume <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="button button-secondary" href="projects.html">
+                        Explore Projects <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="image-frame">
+                    <img
+                        src="images/FootballHead.png"
+                        alt="Portrait of Chase Dixon"
+                        class="profile-image">
+                </div>
+
+                <div class="image-caption">
+                    <span class="caption-line"></span>
+                    <p>Notre Dame · Class of 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights" aria-label="Background highlights">
+            <div class="highlight">
+                <span class="highlight-number">01</span>
+                <h3>Business</h3>
+                <p>Solving complex problems and turning analysis into action.</p>
+            </div>
+
+            <div class="highlight">
+                <span class="highlight-number">02</span>
+                <h3>Technology</h3>
+                <p>Applying a computer science foundation to real-world challenges.</p>
+            </div>
+
+            <div class="highlight">
+                <span class="highlight-number">03</span>
+                <h3>Leadership</h3>
+                <p>Building on lessons in discipline, resilience, and teamwork from football.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Chase Dixon</p>
+        <p>Built with curiosity and a purpose.</p>
+    </footer>
 </body>
 </html>
