@@ -1,166 +1,166 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Movies</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        .movie {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-
-        .movie img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .movie-details {
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+    <meta name="description" content="Chase Dixon's top 10 favorite movies, spanning drama, science fiction, and classic film.">
+    <title>Movies | Chase Dixon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- include the navigation bar -->
     <nav>
+        <a href="index.html" class="logo">CD.</a>
         <ul>
-            <li><a href="https://cdixon12.github.io/">HOME</a></li>
-            <li><a href="https://cdixon12.github.io/about.html">ABOUT</a></li>
-            <li><a href="https://cdixon12.github.io/projects.html">PROJECTS</a></li>
-            <li><a href="https://cdixon12.github.io/movies.html">MOVIES</a></li>
-            <li><a href="https://cdixon12.github.io/books.html">BOOKS</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>My Top 10 Favorite Movies</h1>
-    </header>
 
-    <main>
-        <div class="movie">
-            <img src="images/AmericanGangster.jpg" alt="Movie 1">
-            <div class="movie-details">
-                <h2>American Gangster</h2>
-                <p>Release Year: 2007</p>
-            </div>
-        </div>
+    <main class="movies-page">
+        <header class="page-header">
+            <p class="eyebrow">THE WATCHLIST</p>
+            <h1>Great stories.<br>
+                <span>Lasting impressions.</span>
+            </h1>
+            <p class="page-intro">
+                Ten of my favorite films, from gripping dramas and
+                unforgettable characters to imaginative worlds and
+                stories about perseverance.
+            </p>
+        </header>
 
-        <div class="movie">
-            <img src="images/BreakfastClub.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>The Breakfast Club</h2>
-                <p>Release Year: 1985</p>
-                
-            </div>
-        </div>
+        <section class="movies-grid" aria-label="My top 10 favorite movies">
 
-        <div class="movie">
-            <img src="images/Pursuit.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Pursuit of Happyness</h2>
-                <p>Release Year: 2006</p>
-                
-            </div>
-        </div>
-        <div class="movie">
-            <img src="images/Shawshank.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Shawshank Redemption</h2>
-                <p>Release Year: 1994</p>
-                
-            </div>
-        </div>
-        <div class="movie">
-            <img src="images/Django.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Django Unchained</h2>
-                <p>Release Year: 2012</p>
-                
-            </div>
-        </div>
-        <div class="movie">
-            <img src="images/Inception.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Inception</h2>
-                <p>Release Year: 2010</p>
-                
-            </div>
-        </div>
-        <div class="movie">
-            <img src="images/Prisoners.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Prisoners</h2>
-                <p>Release Year: 2013</p>
-                
-            </div>
-        </div>
-        <div class="movie">
-            <img src="images/Martian.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>The Martian</h2>
-                <p>Release Year: 2015</p>
-                
-            </div>
-        </div>
-        <div class="movie">
-            <img src="images/Temptations.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>The Temptations</h2>
-                <p>Release Year: 1998</p>
-                
-            </div>
-        </div>
-        <div class="movie">
-            <img src="images/Boyz.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Boyz N The Hood</h2>
-                <p>Release Year: 1991</p>
-                
-            </div>
-        </div>
-        <!-- Add more movie entries as needed -->
+            <article class="movie-card">
+                <span class="movie-rank">01</span>
+                <div class="movie-poster">
+                    <img src="images/AmericanGangster.jpg"
+                         alt="American Gangster movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>American Gangster</h2>
+                    <p class="movie-year">2007</p>
+                </div>
+            </article>
 
+            <article class="movie-card">
+                <span class="movie-rank">02</span>
+                <div class="movie-poster">
+                    <img src="images/BreakfastClub.jpg"
+                         alt="The Breakfast Club movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>The Breakfast Club</h2>
+                    <p class="movie-year">1985</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">03</span>
+                <div class="movie-poster">
+                    <img src="images/Pursuit.jpg"
+                         alt="The Pursuit of Happyness movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>The Pursuit of Happyness</h2>
+                    <p class="movie-year">2006</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">04</span>
+                <div class="movie-poster">
+                    <img src="images/Shawshank.jpg"
+                         alt="The Shawshank Redemption movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>The Shawshank Redemption</h2>
+                    <p class="movie-year">1994</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">05</span>
+                <div class="movie-poster">
+                    <img src="images/Django.jpg"
+                         alt="Django Unchained movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Django Unchained</h2>
+                    <p class="movie-year">2012</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">06</span>
+                <div class="movie-poster">
+                    <img src="images/Inception.jpg"
+                         alt="Inception movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Inception</h2>
+                    <p class="movie-year">2010</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">07</span>
+                <div class="movie-poster">
+                    <img src="images/Prisoners.jpg"
+                         alt="Prisoners movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Prisoners</h2>
+                    <p class="movie-year">2013</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">08</span>
+                <div class="movie-poster">
+                    <img src="images/Martian.jpg"
+                         alt="The Martian movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>The Martian</h2>
+                    <p class="movie-year">2015</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">09</span>
+                <div class="movie-poster">
+                    <img src="images/Temptations.jpg"
+                         alt="The Temptations television miniseries poster">
+                </div>
+                <div class="movie-info">
+                    <h2>The Temptations</h2>
+                    <p class="movie-year">1998</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <span class="movie-rank">10</span>
+                <div class="movie-poster">
+                    <img src="images/Boyz.jpg"
+                         alt="Boyz n the Hood movie poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Boyz n the Hood</h2>
+                    <p class="movie-year">1991</p>
+                </div>
+            </article>
+
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 My Favorite Movies</p>
+        <p>&copy; 2026 Chase Dixon. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
